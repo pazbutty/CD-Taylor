@@ -24,9 +24,8 @@ h1 {
 
 .album:hover {
     transform: scale(1.05);
-
-
 }
+
 .album::before {
     content: "";
     position: absolute;

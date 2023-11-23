@@ -13,6 +13,7 @@ function welcome(message) {
 messageTaylorSwift = "Welcome!\nThis is Taylor Swift."
 messageFearless = "Welcome!\nThis is Fearless."
 messageSpeakNow = "Welcome!\nThis is Speak Now."
+messageRed = "Welcome!\nThis is Red."
 
 function welcomeTaylorSwift() {
     welcome(messageTaylorSwift)
@@ -31,3 +32,9 @@ function welcomeSpeakNow() {
  }
  firstAlbum = document.querySelector("body .album:nth-child(3)")
  firstAlbum.addEventListener("click", welcomeSpeakNow)
+
+ function welcomeRed() {
+    welcome(messageRed)
+ }
+ firstAlbum = document.querySelector("body .album:nth-child(4)")
+ firstAlbum.addEventListener("click", welcomeRed)
