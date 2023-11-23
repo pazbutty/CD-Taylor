@@ -1,0 +1,53 @@
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    color: #6cac78;
+}
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.album {
+    width: calc(20% - 20px); 
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.album img {
+    width: 100%;
+    height: auto;
+}
+
+.album:hover {
+    transform: scale(1.05);
+
+
+}
+.album::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.album:hover::before {
+    background-color: #6cac78; 
+    opacity: 0.25;
+}
+
+@media (max-width: 1023px) {
+    .album-list {
+        justify-content: space-between;
+    }
+    .album {
+        width: calc(50% - 20px);
+    }
+}
