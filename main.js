@@ -14,6 +14,7 @@ messageTaylorSwift = "Welcome!\nThis is Taylor Swift."
 messageFearless = "Welcome!\nThis is Fearless."
 messageSpeakNow = "Welcome!\nThis is Speak Now."
 messageRed = "Welcome!\nThis is Red."
+message1989 = "Welcome!\nThis is 1989."
 
 function welcomeTaylorSwift() {
     welcome(messageTaylorSwift)
@@ -38,3 +39,9 @@ function welcomeSpeakNow() {
  }
  firstAlbum = document.querySelector("body .album:nth-child(4)")
  firstAlbum.addEventListener("click", welcomeRed)
+
+ function welcome1989() {
+    welcome(message1989)
+ }
+ firstAlbum = document.querySelector("body .album:nth-child(5)")
+ firstAlbum.addEventListener("click", welcome1989)
